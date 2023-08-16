@@ -120,7 +120,7 @@ fullscreen = 0
 #android.private_storage = True
 
 # (str) Android NDK directory (if empty, it will be automatically downloaded.)
-#android.ndk_path =/content/drive/MyDrive/android-ndk-r25c
+#android.ndk_path =
 
 # (str) Android SDK directory (if empty, it will be automatically downloaded.)
 #android.sdk_path =
