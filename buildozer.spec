@@ -1,7 +1,7 @@
 [app]
 
 # (str) Title of your application
-title = AmansPA
+title = AmansPa
 
 # (str) Package name
 package.name = myapp
@@ -37,17 +37,17 @@ version = 0.1
 
 # (list) Application requirements
 # comma separated e.g. requirements = sqlite3,kivy
-requirements = python3==3.7.6,hostpython3==3.7.6,kivy,pillow
+requirements = python3==3.7.9,hostpython==3.7.9,kivy == 2.0.0,kivymd,pillow
 
 # (str) Custom source folders for requirements
 # Sets custom source for any requirements with recipes
 # requirements.source.kivy = ../../kivy
 
 # (str) Presplash of the application
-presplash.filename = pa.png
+presplash.filename = %(source.dir)s/pa.png
 
 # (str) Icon of the application
-#icon.filename = %(source.dir)s/data/icon.png
+icon.filename = %(source.dir)s/pa1.png
 
 # (list) Supported orientations
 # Valid options are: landscape, portrait, portrait-reverse or landscape-reverse
@@ -64,7 +64,7 @@ orientation = portrait
 # author = © Copyright Info
 
 # change the major version of python used by the app
-osx.python_version = 3.7.6
+osx.python_version = 3.7.9
 
 # Kivy version to use
 osx.kivy_version = 1.9.1
@@ -104,13 +104,13 @@ fullscreen = 0
 #android.api = 31
 
 # (int) Minimum API your APK / AAB will support.
-android.minapi = 21
+#android.minapi = 21
 
 # (int) Android SDK version to use
-#android.sdk = 
+#android.sdk = 20
 
 # (str) Android NDK version to use
-#android.ndk = r25c
+#android.ndk = 23b
 
 
 # (int) Android NDK API to use. This is the minimum API your app will support, it should usually match android.minapi.
@@ -120,7 +120,7 @@ android.minapi = 21
 #android.private_storage = True
 
 # (str) Android NDK directory (if empty, it will be automatically downloaded.)
-#android.ndk_path =
+#android.ndk_path =/content/drive/MyDrive/android-ndk-r25c
 
 # (str) Android SDK directory (if empty, it will be automatically downloaded.)
 #android.sdk_path =
@@ -234,7 +234,7 @@ android.minapi = 21
 #android.ouya.category = GAME
 
 # (str) Filename of OUYA Console icon. It must be a 732x412 png image.
-#android.ouya.icon.filename = pa.jpeg
+#android.ouya.icon.filename = %(source.dir)s/data/ouya_icon.png
 
 # (str) XML file to include as an intent filters in <activity> tag
 #android.manifest.intent_filters =
